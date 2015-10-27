@@ -1,0 +1,28 @@
+<head>
+  <title>myMeteorApp</title>
+</head>
+
+<body>
+  <h1>Welcome to ToDo Meteor</h1>
+  {{> register}}
+</body>
+
+<template name="register">
+  {{#if currentUser}}
+    {{> todolist}}
+  {{else}}
+    <span>Click here to sign in</span>
+    <button class="btn btn-lrg btn-primary register">Register</button>
+  {{/if}}
+</template>
+
+<template name="editTodolists">
+  {{#each todolists}}
+    <h3>Hi</h3>
+
+
+  {{/each}}
+  <footer>
+    <a href="#" class="signout">Log out</a>
+  </footer>
+</template>

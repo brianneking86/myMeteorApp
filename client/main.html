@@ -1,0 +1,26 @@
+<head>
+  <title>myMeteorApp</title>
+</head>
+
+<body>
+  <h1>Welcome to ToDo Meteor</h1>
+  {{> addTodolists}}
+</body>
+
+<template name="register">
+
+</template>
+
+<template name="addTodolists">
+  {{#unless todolists}}
+    <h5>No todo lists</h5>
+  {{/unless}}
+  {{#each todolists}}
+    <h3>Hi</h3>
+
+
+  {{/each}}
+  <footer>
+    <p><small>ToDo List Meteor by Brianne King</small></p>
+  </footer>
+</template>
